@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>
+    SD 3º Seminario
+  </title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='style1.css')}}">
+  
+</head>  
+
+  <h1>
+  <p>Mapa con marcadores de los tweets buscados<p/>
+  </h1>  
+  
+<body>
+  <div>
+ 
+    <table BORDER=3  CELLPADDING=10 CELLSPACING=10>
+      <tr>	
+	
+	<td WIDTH=300 VALIGN=TOP>
+	<br/>
+	<p><b>Asignatura:</b> Sistemas Distribuidos</p>
+	<br/>
+	<p><b>Alumno:</b> Edson Castro Monterrosa</p>
+	<br/>
+	<p><b>Tercera entrega.</b></p>
+	<br/>
+
+	<form action="/buscar" method="POST">
+	  <input type="text" name="text">
+	  <input type="submit" name="my-form" class="button buttonBlue" value="Buscar">
+	</form>
+	<br/>	
+	</td>
+	
+	</tr>
+     </talbe>
+  </div>
+</body>
+</html>
